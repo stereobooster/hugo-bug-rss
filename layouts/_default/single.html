@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <article>
+        <header>
+            <h1>
+                {{ .Title }}
+            </h1>
+            <aside>
+            {{ .Date.Format "Jan 2, 2006 15:04" }}
+            · {{ .ReadingTime }} minute read
+            </aside>
+        </header>
+        <section>
+          {{ .Content }}
+        </section>
+    </article>
+{{ end }}
